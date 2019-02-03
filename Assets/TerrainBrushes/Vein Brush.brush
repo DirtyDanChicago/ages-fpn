@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12146, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Vein
+  m_Name: Vein Brush
   m_EditorClassIdentifier: 
   m_Mask: {fileID: 2800000, guid: 44ee9b6575de5644c9d2356bb653bc16, type: 3}
   m_Falloff:
