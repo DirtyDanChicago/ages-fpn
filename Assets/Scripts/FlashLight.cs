@@ -5,14 +5,14 @@ using UnityEngine;
 public class FlashLight : MonoBehaviour
 {
 
-    private FlashLight flashLight;
+    private Light flashLight;
 
 
     // Start is called before the first frame update
      
     void Start()
     {
-        flashLight = GetComponent<FlashLight>();
+        flashLight = GetComponent<Light>();
 
         flashLight.enabled = false;
     }
@@ -26,11 +26,11 @@ public class FlashLight : MonoBehaviour
 
             flashLight.enabled = true;
         }
-        else if (flashLight.enabled = true && Input.GetKeyDown(KeyCode.F))
+        else if (Input.GetKeyDown(KeyCode.F))
         {
 
-            Debug.Log("Flashlight is on.");
-
+            Debug.Log("Flashlight is off.");
+   
             flashLight.enabled = false;
 
         }
