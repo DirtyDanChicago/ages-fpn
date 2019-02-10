@@ -7,6 +7,7 @@ public class FlashLight : MonoBehaviour
 
     private Light flashLight;
 
+    private bool isOn;
 
     // Start is called before the first frame update
      
@@ -18,21 +19,15 @@ public class FlashLight : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+
         if (Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Flashlight is on.");
 
-            flashLight.enabled = true;
+            flashLight.enabled = !flashLight.enabled;
         }
-        else if (Input.GetKeyDown(KeyCode.F))
-        {
 
-            Debug.Log("Flashlight is off.");
-   
-            flashLight.enabled = false;
-
-        }
     }
 }
