@@ -7,8 +7,6 @@ public class FlashLight : MonoBehaviour
 
     private Light flashLight;
 
-    private bool isOn;
-
     // Start is called before the first frame update
      
     void Start()
