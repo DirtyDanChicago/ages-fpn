@@ -4,27 +4,34 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
+    //This code is used for the flashlight feature of this game.
+    //It works by turning a spotlight attached to the character on or off.
 
+
+    //Flashlight variable.
     private Light flashLight;
-
-    // Start is called before the first frame update
+   
      
     void Start()
     {
-        flashLight = GetComponent<Light>();
-
+		//Gets the light component of the flashlight, and starts with it off.
+		flashLight = GetComponent<Light>();
         flashLight.enabled = false;
     }
 
-    // Update is called once per frame
+   
     void FixedUpdate()
     {
-
+        
+        //Checks for F button input.
         if (Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Flashlight is on.");
 
+            //Checks if the flashlight is on or off already. 
+			//if it's on the flashlight turns off, and vice versa.
             flashLight.enabled = !flashLight.enabled;
+
         }
 
     }
