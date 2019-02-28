@@ -23,11 +23,16 @@ public class DetectInteractable : MonoBehaviour
 
     private void FixedUpdate()
     {
-        raycastDirection = raycastOrigin.forward;
-        Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, maxDistance);
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxDistance, Color.red);
+        RaycastHit hitInfo;
+
+        bool objectDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxDistance);
+
+        if (objectDetected)
+        {
+           Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
+        }
+
     }
-
-
 
 }
