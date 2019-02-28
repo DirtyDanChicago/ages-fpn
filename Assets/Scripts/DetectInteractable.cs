@@ -37,6 +37,11 @@ public class DetectInteractable : MonoBehaviour
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
 
+        if (interactive != null)
+        {
+            interactive.InteractWith();
+        }
+
     }
 
 }

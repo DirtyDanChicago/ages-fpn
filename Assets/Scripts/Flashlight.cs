@@ -23,7 +23,7 @@ public class Flashlight : MonoBehaviour
     {
 
         //Checks for F button input.
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetButtonDown("Flashlight")) 
         {
             Debug.Log("Flashlight is on.");
 
