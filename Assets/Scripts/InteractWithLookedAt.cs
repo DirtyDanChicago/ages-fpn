@@ -9,11 +9,13 @@ using UnityEngine;
 
 public class InteractWithLookedAt : MonoBehaviour
 {
-   
+    [SerializeField]
+    private DetectInteractable detectInteractable;
+
     void Update()
     {
         
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButtonDown("Interact") && detectInteractable.lookedAtInteractive != null)
         {
             Debug.Log("Player pressed the interact button.");
         }

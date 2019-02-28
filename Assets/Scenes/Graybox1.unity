@@ -51248,6 +51248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd34d6a6cc16044fba76057d087145e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectInteractable: {fileID: 2095884666}
 --- !u!43 &2124877279
 Mesh:
   m_ObjectHideFlags: 0

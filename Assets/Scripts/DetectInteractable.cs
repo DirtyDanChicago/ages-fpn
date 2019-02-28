@@ -21,6 +21,8 @@ public class DetectInteractable : MonoBehaviour
 
     private Vector3 raycastDirection;
 
+    public IInteractive lookedAtInteractive;
+
     private void FixedUpdate()
     {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxDistance, Color.red);
@@ -39,7 +41,7 @@ public class DetectInteractable : MonoBehaviour
 
         if (interactive != null)
         {
-            interactive.InteractWith();
+            lookedAtInteractive = interactive;
         }
 
     }
