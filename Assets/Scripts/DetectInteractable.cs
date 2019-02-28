@@ -28,9 +28,13 @@ public class DetectInteractable : MonoBehaviour
 
         bool objectDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxDistance);
 
+        IInteractive interactive = null; 
+
         if (objectDetected)
         {
-           Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
+            //Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
+
+            interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
 
     }
