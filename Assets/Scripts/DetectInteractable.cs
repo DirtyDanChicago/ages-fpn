@@ -21,7 +21,15 @@ public class DetectInteractable : MonoBehaviour
 
     private Vector3 raycastDirection;
 
-    public IInteractive lookedAtInteractive;
+    public IInteractive LookedAtInteractive
+    {
+
+        get { return LookedAtInteractive; }
+        private set { LookedAtInteractive = value; }
+
+
+    }
+
 
     private void FixedUpdate()
     {
@@ -30,7 +38,9 @@ public class DetectInteractable : MonoBehaviour
 
         bool objectDetected = Physics.Raycast(raycastOrigin.position, raycastOrigin.forward, out hitInfo, maxDistance);
 
-        IInteractive interactive = null; 
+        IInteractive interactive = null;
+
+        LookedAtInteractive = interactive;
 
         if (objectDetected)
         {
@@ -41,7 +51,7 @@ public class DetectInteractable : MonoBehaviour
 
         if (interactive != null)
         {
-            lookedAtInteractive = interactive;
+            LookedAtInteractive = interactive;
         }
 
     }
