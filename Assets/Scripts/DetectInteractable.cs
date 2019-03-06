@@ -34,7 +34,13 @@ public class DetectInteractable : MonoBehaviour
         private set
         {
             bool isInteractiveChanged = value != LookedAtInteractive;
-            lookedAtInteractive = value;
+
+            if (isInteractiveChanged)
+
+                lookedAtInteractive = value;
+
+                if (LookedAtInteractiveChanged != null)
+                    LookedAtInteractiveChanged.Invoke();
         }
     }
 
