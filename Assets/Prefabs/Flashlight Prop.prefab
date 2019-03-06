@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4413473187678737079}
   - component: {fileID: 4413473187678737072}
   - component: {fileID: 4413473187678737073}
+  - component: {fileID: 5158035482833675390}
   m_Layer: 0
   m_Name: Flashlight Prop
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4413473187678737074}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.3449993, y: -0.501, z: 0.60699844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -874,6 +875,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &5158035482833675390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413473187678737074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb74db56b8762d844b6df7df778bc964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4413473189365389546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight
       objectReference: {fileID: 0}
+    - target: {fileID: 3291280689135091618, guid: 05a056bf75a434448bc2fa0fba49e67d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1867,26 +1885,6 @@ PrefabInstance:
     - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091623, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: lightIntensity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3291280689135091620, guid: 05a056bf75a434448bc2fa0fba49e67d,

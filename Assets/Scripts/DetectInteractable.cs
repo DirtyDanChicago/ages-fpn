@@ -23,11 +23,8 @@ public class DetectInteractable : MonoBehaviour
 
     public IInteractive LookedAtInteractive
     {
-
         get { return LookedAtInteractive; }
-        private set { LookedAtInteractive = value; }
-
-
+        set { LookedAtInteractive = value; }
     }
 
 
@@ -44,7 +41,7 @@ public class DetectInteractable : MonoBehaviour
 
         if (objectDetected)
         {
-            //Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
+            Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
 
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }

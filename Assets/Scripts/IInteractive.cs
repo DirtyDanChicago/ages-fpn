@@ -9,8 +9,5 @@ using UnityEngine;
 
 public interface IInteractive
 {
-
     void InteractWith();
-
-
 }
