@@ -21,10 +21,10 @@ public class DetectInteractable : MonoBehaviour
 
     private Vector3 raycastDirection;
 
-    public IInteractive LookedAtInteractive
+    public IInteractive lookedAtInteractive
     {
-        get { return LookedAtInteractive; }
-        set { LookedAtInteractive = value; }
+        get { return lookedAtInteractive; }
+        set { lookedAtInteractive = value; }
     }
 
 
@@ -37,7 +37,7 @@ public class DetectInteractable : MonoBehaviour
 
         IInteractive interactive = null;
 
-        LookedAtInteractive = interactive;
+        lookedAtInteractive = interactive;
 
         if (objectDetected)
         {
@@ -48,7 +48,7 @@ public class DetectInteractable : MonoBehaviour
 
         if (interactive != null)
         {
-            LookedAtInteractive = interactive;
+            lookedAtInteractive = interactive;
         }
 
     }
