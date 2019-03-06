@@ -1,7 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class DetectInteractable : MonoBehaviour
 {
     /// <summary>
@@ -21,10 +22,20 @@ public class DetectInteractable : MonoBehaviour
 
     private Vector3 raycastDirection;
 
+    /// <summary>
+    /// An event that is activated when a player looks at an new interactable object.
+    /// </summary>
+
+    public static event Action LookedAtInteractiveChanged;
+
     public IInteractive LookedAtInteractive
     {
         get { return lookedAtInteractive; }
-        private set { lookedAtInteractive = value; }
+        private set
+        {
+            bool isInteractiveChanged = value != LookedAtInteractive;
+            lookedAtInteractive = value;
+        }
     }
 
     public IInteractive lookedAtInteractive;
