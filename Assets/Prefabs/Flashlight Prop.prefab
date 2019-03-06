@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4413473187678737079}
   - component: {fileID: 4413473187678737072}
   - component: {fileID: 4413473187678737073}
-  - component: {fileID: 5158035482833675390}
   m_Layer: 0
   m_Name: Flashlight Prop
   m_TagString: Untagged
@@ -875,18 +874,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &5158035482833675390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4413473187678737074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74db56b8762d844b6df7df778bc964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4413473189365389546
 GameObject:
   m_ObjectHideFlags: 0

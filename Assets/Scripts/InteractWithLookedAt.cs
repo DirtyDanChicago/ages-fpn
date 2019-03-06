@@ -15,9 +15,11 @@ public class InteractWithLookedAt : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetButtonDown("Interact") && detectInteractable.lookedAtInteractive != null)
+        if (Input.GetButtonDown("Interact") && detectInteractable.LookedAtInteractive != null)
         {
-            Debug.Log("Player pressed the interact button.");
+            //Debug.Log("Player pressed the interact button.");
+
+            detectInteractable.LookedAtInteractive.InteractWith();
         }
 
     }
