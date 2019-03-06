@@ -21,12 +21,13 @@ public class DetectInteractable : MonoBehaviour
 
     private Vector3 raycastDirection;
 
-    public IInteractive lookedAtInteractive
+    public IInteractive LookedAtInteractive
     {
         get { return lookedAtInteractive; }
         set { lookedAtInteractive = value; }
     }
 
+    public IInteractive lookedAtInteractive;
 
     private void FixedUpdate()
     {
