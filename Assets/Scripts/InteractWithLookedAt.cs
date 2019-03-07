@@ -9,18 +9,39 @@ using UnityEngine;
 
 public class InteractWithLookedAt : MonoBehaviour
 {
-    [SerializeField]
-    private DetectInteractable detectInteractable;
+
+    private IInteractive lookedAtInteractive;
 
     void Update()
     {
-        
-        if (Input.GetButtonDown("Interact") && detectInteractable.LookedAtInteractive != null)
+
+        if (Input.GetButtonDown("Interact") && lookedAtInteractive != null)
         {
             //Debug.Log("Player pressed the interact button.");
 
-            detectInteractable.LookedAtInteractive.InteractWith();
+            lookedAtInteractive.InteractWith();
         }
 
     }
+
+    /// <summary>
+    /// This is the event handler for the Looked At Interactive Changed.
+    /// </summary>
+    /// <param name="newLookedAtInteractive">Reference to the new interactive the player is looking at.</param>
+    private void OnLookedAtInteractiveChanged(IInteractive newLookedAtInteractive)
+    {
+        lookedAtInteractive = newLookedAtInteractive;
+    }
+
+    private void OnEnable()
+    {
+        DetectInteractable.LookedAtInteractiveChanged += OnLookedAtInteractiveChanged;
+    }
+
+    private void OnDisable()
+    {
+        DetectInteractable.LookedAtInteractiveChanged -= OnLookedAtInteractiveChanged;
+    }
+
+
 }

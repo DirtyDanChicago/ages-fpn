@@ -26,7 +26,7 @@ public class DetectInteractable : MonoBehaviour
     /// An event that is activated when a player looks at an new interactable object.
     /// </summary>
 
-    public static event Action LookedAtInteractiveChanged;
+    public static event Action <IInteractive> LookedAtInteractiveChanged;
 
     public IInteractive LookedAtInteractive
     {
@@ -38,15 +38,18 @@ public class DetectInteractable : MonoBehaviour
             if (isInteractiveChanged)
 
                 lookedAtInteractive = value;
-
-                if (LookedAtInteractiveChanged != null)
-                    LookedAtInteractiveChanged.Invoke();
+                LookedAtInteractiveChanged?.Invoke(lookedAtInteractive);
         }
     }
 
     public IInteractive lookedAtInteractive;
 
     private void FixedUpdate()
+    {
+        GetLookedAtInteractive();
+    }
+
+    private IInteractive GetLookedAtInteractive()
     {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxDistance, Color.red);
         RaycastHit hitInfo;
@@ -69,6 +72,6 @@ public class DetectInteractable : MonoBehaviour
             lookedAtInteractive = interactive;
         }
 
+        return interactive;
     }
-
 }
