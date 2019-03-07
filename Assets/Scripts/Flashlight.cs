@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    ///This code is used for the flashlight feature of this game. It works by turning a spotlight attached to the character on or off.
+    /// <summary>
+    /// This code is used for the flashlight feature of this game. It works by turning a spotlight attached to the character on or off.
+    /// </summary>
 
 
 
@@ -19,8 +21,8 @@ public class Flashlight : MonoBehaviour
         flashLight.enabled = false;
     }
 
-
-    void FixedUpdate()
+    //Checks for user input to turn flashlight on and off.
+    void Update()
     {
 
         //Checks for F button input.
