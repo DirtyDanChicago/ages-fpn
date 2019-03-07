@@ -16,6 +16,7 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
     private void Awake()
     {
         displayText = GetComponent<Text>();
+        UpdateDisplayText();
     }
 
     private void UpdateDisplayText()
@@ -32,6 +33,7 @@ public class LookedAtInteractiveDisplayText : MonoBehaviour
     /// <param name="newLookedAtInteractive">Reference to the new interactive the player is looking at.</param>
     private void OnLookedAtInteractiveChanged(IInteractive newLookedAtInteractive)
     {
+        lookedAtInteractive = newLookedAtInteractive;
         UpdateDisplayText();
     }
 

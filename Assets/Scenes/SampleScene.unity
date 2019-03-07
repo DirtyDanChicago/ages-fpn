@@ -118,7 +118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28398
+  m_Name: pb_Mesh5786
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -493,10 +493,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 16
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -504,7 +504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Hello
 --- !u!222 &150206226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -568,7 +568,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1746,7 +1746,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28402
+  m_Name: pb_Mesh5790
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3157,7 +3157,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-10238
+  m_Name: pb_Mesh-1286
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3489,7 +3489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb74db56b8762d844b6df7df778bc964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: 
+  displayText: Flashlight
 --- !u!1 &1825465878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7773824204885028490, guid: 0a048e688c4eeb546a522fc458137a0b,
@@ -3508,14 +3508,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb74db56b8762d844b6df7df778bc964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: 
+  displayText: Monolith
 --- !u!43 &1852414693
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28362
+  m_Name: pb_Mesh5750
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4838,7 +4838,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28380
+  m_Name: pb_Mesh5768
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
