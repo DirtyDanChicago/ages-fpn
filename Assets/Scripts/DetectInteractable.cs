@@ -66,7 +66,8 @@ public class DetectInteractable : MonoBehaviour
 
         if (objectDetected)
         {
-            Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
+            //Debug to test the raycast.
+            //Debug.Log($"The player is looking at {hitInfo.collider.gameObject.name}");
 
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
