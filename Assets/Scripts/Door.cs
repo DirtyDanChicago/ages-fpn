@@ -6,9 +6,13 @@ using UnityEngine;
 public class Door : InteractiveObject
 {
     private Animator animator;
-
     private bool isOpen = false;
+
+    private int shouldOpenAnimParameter = Animator.StringToHash("shouldOpen");
     
+    /// <summary>
+    /// Using constructor to initialize displayText in the editor.
+    /// </summary>
     public Door()
     {
         displayText = nameof(Door);
@@ -25,7 +29,7 @@ public class Door : InteractiveObject
         if (!isOpen)
         {
             base.InteractWith();
-            animator.SetBool("shouldOpen", true);
+            animator.SetBool(shouldOpenAnimParameter, true);
             isOpen = true;
 
             displayText = ("Close Door");
@@ -33,7 +37,7 @@ public class Door : InteractiveObject
         else
         {
             base.InteractWith();
-            animator.SetBool("shouldOpen", false);
+            animator.SetBool(shouldOpenAnimParameter, false);
             isOpen = false;
 
             displayText = ("Open Door");
