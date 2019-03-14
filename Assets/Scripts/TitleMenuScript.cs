@@ -8,7 +8,7 @@ public class TitleMenuScript : MonoBehaviour
 
     public void SceneLoader()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     public void EndGame()
