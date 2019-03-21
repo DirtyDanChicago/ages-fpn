@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4413473187678737074}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.3449993, y: -0.501, z: 0.60699844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1814,6 +1814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight
       objectReference: {fileID: 0}
+    - target: {fileID: 3291280689135091618, guid: 05a056bf75a434448bc2fa0fba49e67d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1867,26 +1872,6 @@ PrefabInstance:
     - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091621, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3291280689135091623, guid: 05a056bf75a434448bc2fa0fba49e67d,
-        type: 3}
-      propertyPath: lightIntensity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3291280689135091620, guid: 05a056bf75a434448bc2fa0fba49e67d,
