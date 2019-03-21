@@ -6,7 +6,6 @@ using UnityEngine;
 /// Interface for all the things the player can interact with.
 /// </summary>
 
-
 public interface IInteractive
 {
     string DisplayText { get; }
