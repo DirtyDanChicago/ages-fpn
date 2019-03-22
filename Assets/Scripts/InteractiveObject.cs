@@ -4,6 +4,10 @@ using UnityEngine;
 
 [RequireComponent(typeof (AudioSource))]
 
+/// <summary>
+/// This class displays the name of the object the player is looking at it is an Interactive Object.
+/// </summary>
+
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
@@ -30,8 +34,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         {
             throw new System.Exception("Missing AudioSource component, and or audio clip.");
         }
-
-        
+  
         Debug.Log($"The player interacted with {gameObject.name}");
     }
 }

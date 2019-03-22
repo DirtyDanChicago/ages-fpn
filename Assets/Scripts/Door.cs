@@ -35,7 +35,6 @@ public class Door : InteractiveObject
         animator = GetComponent<Animator>();
     }
 
-
     /// <summary>
     /// Script for interacting with the door.
     /// </summary>
