@@ -27,7 +27,6 @@ public class DetectInteractable : MonoBehaviour
     /// </summary>
 
     public static event Action <IInteractive> LookedAtInteractiveChanged;
-
     public IInteractive LookedAtInteractive
     {
         get { return lookedAtInteractive; }
@@ -52,7 +51,7 @@ public class DetectInteractable : MonoBehaviour
     /// <summary>
     /// Raycasts from the camera to detect IInteractive objects.
     /// </summary>
-    /// <returns>Returns the first IInteractive detected, or returning null if no IInteractives are found.</returns>
+    /// <returns> Returns the first IInteractive detected, or returning null if no IInteractives are found.</returns>
     private IInteractive GetLookedAtInteractive()
     {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxDistance, Color.red);
@@ -72,6 +71,7 @@ public class DetectInteractable : MonoBehaviour
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
 
+        //If the interactive object isn't null the object is interactable.
         if (interactive != null)
         {
             lookedAtInteractive = interactive;

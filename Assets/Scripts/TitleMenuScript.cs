@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// This script loads different scenes inputed through the editor.
+/// </summary>
 public class TitleMenuScript : MonoBehaviour
 {
     [SerializeField]
