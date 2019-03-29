@@ -1259,7 +1259,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1499986913}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &85449483
+--- !u!82 &85449486
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2437,7 +2437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 702230368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74db56b8762d844b6df7df778bc964, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b8c609d4bb587a43a264a5b2289e959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: Keycard
@@ -2451,8 +2451,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8881e812de7a18240b4e81b3c789a045, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6651,7 +6651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flashlightAudioSource
       value: 
-      objectReference: {fileID: 85449483}
+      objectReference: {fileID: 85449486}
     m_RemovedComponents:
     - {fileID: 2513424550924637814, guid: 06bffb4c2a5e87e4bbf4f25f98eae64e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 06bffb4c2a5e87e4bbf4f25f98eae64e, type: 3}
@@ -11471,7 +11471,7 @@ PrefabInstance:
     - target: {fileID: 1133973139160179843, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
         type: 3}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7e1b2aa57ecde4189983c6fa84204f, type: 3}
