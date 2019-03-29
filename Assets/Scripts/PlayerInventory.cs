@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public static List<InventoryObjectScript> InventoryObjects { get; } = new List<InventoryObjectScript>();
+    public static List<InventoryObject> InventoryObjects { get; } = new List<InventoryObject>();
+    public static object InventoryObject { get; internal set; }
 }

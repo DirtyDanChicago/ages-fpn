@@ -11,7 +11,7 @@ using UnityEngine;
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
-    [Tooltip("The name displayed when the player looks at this interactive object.")]
+    [Tooltip("The text displayed when the player looks at this interactive object.")]
     protected string displayText = nameof(InteractiveObject);
 
     public virtual string DisplayText => displayText;

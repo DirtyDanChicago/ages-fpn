@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryObjectScript : InteractiveObject
+public class InventoryObject : InteractiveObject
 {
     //TODO: Add long description field.
     //TODO: Add a field for an icon.
+    [Tooltip("The name of the object as it appears in the player's inventory.")]
+    [SerializeField]
+    private string objectName = nameof(InventoryObject);
 
     //Variables to help find the collider, and renderer of the Inventory Objects.
     private new Collider collider;
@@ -18,9 +21,9 @@ public class InventoryObjectScript : InteractiveObject
         renderer = GetComponent<Renderer>();
     }
 
-    public InventoryObjectScript()
+    public InventoryObject()
     {
-        displayText = nameof(InventoryObjectScript);
+        displayText = $"Take {objectName}";
     }
 
     /// <summary>
@@ -34,7 +37,6 @@ public class InventoryObjectScript : InteractiveObject
     {
         base.InteractWith();
         PlayerInventory.InventoryObjects.Add(this);
-
         collider.enabled = false;
         renderer.enabled = false;
     }
