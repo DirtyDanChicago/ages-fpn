@@ -8,15 +8,19 @@ public class Flashlight : MonoBehaviour
     /// This code is used for the flashlight feature of this game. It works by turning a spotlight attached to the character on or off.
     /// </summary>
 
+    //Flashlight audio.
+    [SerializeField]
+    private AudioSource flashlightAudioSource;
     //Flashlight variable.
-    private Light flashLight;
+    private Light flashlight;
 
 
     void Start()
     {
         //Gets the light component of the flashlight, and starts with it off.
-        flashLight = GetComponent<Light>();
-        flashLight.enabled = false;
+        flashlight = GetComponent<Light>();
+        flashlightAudioSource = GetComponent<AudioSource>();
+        flashlight.enabled = false;
     }
 
     //Checks for user input to turn flashlight on and off.
@@ -30,7 +34,8 @@ public class Flashlight : MonoBehaviour
 
             //Checks if the flashlight is on or off already. 
             //if it's on the flashlight turns off, and vice versa.
-            flashLight.enabled = !flashLight.enabled;
+            flashlight.enabled = !flashlight.enabled;
+            flashlightAudioSource.Play();
 
         }
 
