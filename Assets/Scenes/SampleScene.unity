@@ -5586,7 +5586,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-53842
+  m_Name: pb_Mesh-17192
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7264,7 +7264,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-53830
+  m_Name: pb_Mesh-17178
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10658,11 +10658,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2993522}
     m_Modifications:
-    - target: {fileID: 1133973139160179850, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
-        type: 3}
-      propertyPath: m_Name
-      value: Door
-      objectReference: {fileID: 0}
     - target: {fileID: 1133973139160179853, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10718,6 +10713,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1133973139160179850, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
+        type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 1133973139160179854, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
         type: 3}
       propertyPath: m_Mesh
@@ -10738,6 +10738,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1170419894}
+    - target: {fileID: 1133973139160179843, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
+        type: 3}
+      propertyPath: lockedDisplayText
+      value: Door is Locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133973139160179843, guid: 6e7e1b2aa57ecde4189983c6fa84204f,
+        type: 3}
+      propertyPath: displayText
+      value: Open Door
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7e1b2aa57ecde4189983c6fa84204f, type: 3}
 --- !u!1001 &1164179659973178428

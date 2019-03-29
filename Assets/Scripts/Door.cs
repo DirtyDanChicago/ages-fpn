@@ -20,7 +20,15 @@ public class Door : InteractiveObject
     [SerializeField]
     private string lockedDisplayText = "Locked Door";
 
-    public override string DisplayText => base.displayText;
+    [Tooltip("The audio clip played when the player tries to open a locked door.")]
+    [SerializeField]
+    private AudioClip lockedAudioClip;
+
+    [Tooltip("The audio clip played when the player tries to open door.")]
+    [SerializeField]
+    private AudioClip openAudioClip;
+
+    public override string DisplayText => isLocked ? lockedDisplayText : base.displayText;
 
     private Animator animator;
     private bool isOpen = false;
@@ -50,29 +58,35 @@ public class Door : InteractiveObject
     /// </summary>
     public override void InteractWith()
     {
-        if (isLocked == true)
-        {
-            displayText = ("Door is Locked");
-        }
-		//If is open is true, the shouldOpen parameter is set to true, and the door opens.
+		//If is open is true and the door isn't locked, the shouldOpen parameter is set to true and the door opens.
         //It also sets the display text to "Close Door."
-        else if (!isOpen && !isLocked)
+        if (!isOpen && !isLocked)
         {
+            audioSource.clip = openAudioClip;
+
             base.InteractWith();
             animator.SetBool(shouldOpenAnimParameter, true);
             isOpen = true;
 
             displayText = ("Close Door");
         }
-        //If isOpen is false, the door closes, or remains closed setting shouldOpen animator to false.
+        //If isOpen is false and the door isn't locked, the door closes, or remains closed setting shouldOpen animator to false.
         //It also sets the display text to "Open Door."
-        else
+        else if (isOpen && !isLocked)
         {
+            audioSource.clip = openAudioClip;
+
             base.InteractWith();
             animator.SetBool(shouldOpenAnimParameter, false);
             isOpen = false;
 
             displayText = ("Open Door");
+        }
+        //If the door is locked, play the locked audio clip when interacting with it.
+        else if (isLocked)
+        {
+            audioSource.clip = lockedAudioClip;
+            base.InteractWith();
         }
     }
             

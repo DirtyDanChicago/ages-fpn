@@ -15,7 +15,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     protected string displayText = nameof(InteractiveObject);
 
     public virtual string DisplayText => displayText;
-    private AudioSource audioSource;
+    protected private AudioSource audioSource;
 
     //On awake, find the audio source component of the object.
     protected virtual void Awake()
