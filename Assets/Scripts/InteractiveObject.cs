@@ -14,7 +14,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     [Tooltip("The name displayed when the player looks at this interactive object.")]
     protected string displayText = nameof(InteractiveObject);
 
-    public string DisplayText => displayText;
+    public virtual string DisplayText => displayText;
     private AudioSource audioSource;
 
     //On awake, find the audio source component of the object.

@@ -12,6 +12,16 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Door : InteractiveObject
 {
+    [Tooltip("Check this box to indicate whether or not the door is locked.")]
+    [SerializeField]
+    private bool isLocked = false;
+
+    [Tooltip("Display text when door is locked.")]
+    [SerializeField]
+    private string lockedDisplayText = "Locked Door";
+
+    public override string DisplayText => base.displayText;
+
     private Animator animator;
     private bool isOpen = false;
 
@@ -40,9 +50,13 @@ public class Door : InteractiveObject
     /// </summary>
     public override void InteractWith()
     {
+        if (isLocked == true)
+        {
+            displayText = ("Door is Locked");
+        }
 		//If is open is true, the shouldOpen parameter is set to true, and the door opens.
         //It also sets the display text to "Close Door."
-        if (!isOpen)
+        else if (!isOpen && !isLocked)
         {
             base.InteractWith();
             animator.SetBool(shouldOpenAnimParameter, true);
