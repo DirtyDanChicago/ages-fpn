@@ -6643,6 +6643,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 472532014}
+    - target: {fileID: 8552651438992070980, guid: 06bffb4c2a5e87e4bbf4f25f98eae64e,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2327553486743672674, guid: 06bffb4c2a5e87e4bbf4f25f98eae64e,
         type: 3}
       propertyPath: m_DynamicOccludee

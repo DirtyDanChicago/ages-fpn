@@ -25,7 +25,6 @@ public class Door : InteractiveObject
     [SerializeField]
     private AudioClip openAudioClip;
 
-
     /// <summary>
     /// Assigning a key to a door will lock the door and require the key to be used.
     /// </summary>
@@ -74,6 +73,27 @@ public class Door : InteractiveObject
     /// </summary>
     public override void InteractWith()
     {
+
+        /*if (!isOpen)
+        {
+
+            if (isLocked && !HasKey) //If door is locked and player doesn't have the key, play locked effect.
+            {
+                audioSource.clip = lockedAudioClip;
+            }
+            else
+            {
+                audioSource.clip = OpenAudioClip;
+
+                base.InteractWith();
+                animator.SetBool(shouldOpenAnimParameter, true);
+                isOpen = true;
+            }
+
+        }*/
+
+       
+
 		//If isOpen is true, the player has the key, and the door isn't locked, the shouldOpen parameter is set to true and the door opens.
         //It also sets the display text to "Close Door."
         if (!isOpen && isLocked && HasKey)
@@ -85,22 +105,23 @@ public class Door : InteractiveObject
             isOpen = true;
 
             lockedDisplayText = "Close Door";
-            
+
+
+            base.InteractWith();
         }
         //If isOpen is false, the player has the key, and the door isn't locked, the shouldOpen parameter is set to false and the door closes.
         //It also sets the display text to "Open Door."
         else if (isOpen && isLocked && HasKey)
         {
             audioSource.clip = OpenAudioClip;
-
-            base.InteractWith();
             animator.SetBool(shouldOpenAnimParameter, false);
             isOpen = false;
-
             lockedDisplayText = "Open Door";
+
+            base.InteractWith();
         }
         //If the door is locked, and the player doesn't have the key play the locked audio clip when interacting with it.
-        else if (isLocked && !HasKey)
+        else
         {
             audioSource.clip = lockedAudioClip;
             base.InteractWith();
