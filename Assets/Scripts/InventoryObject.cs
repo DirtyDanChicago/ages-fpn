@@ -10,6 +10,8 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private string objectName = nameof(InventoryObject);
 
+    public string ObjectName => objectName;
+
     //Variables to help find the collider, and renderer of the Inventory Objects.
     private new Collider collider;
     private new Renderer renderer;
