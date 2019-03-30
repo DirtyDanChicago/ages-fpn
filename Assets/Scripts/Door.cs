@@ -25,6 +25,7 @@ public class Door : InteractiveObject
     [SerializeField]
     private AudioClip openAudioClip;
 
+
     /// <summary>
     /// Assigning a key to a door will lock the door and require the key to be used.
     /// </summary>
@@ -83,7 +84,8 @@ public class Door : InteractiveObject
             animator.SetBool(shouldOpenAnimParameter, true);
             isOpen = true;
 
-            displayText = "Open Door";
+            lockedDisplayText = "Close Door";
+            
         }
         //If isOpen is false, the player has the key, and the door isn't locked, the shouldOpen parameter is set to false and the door closes.
         //It also sets the display text to "Open Door."
@@ -95,8 +97,7 @@ public class Door : InteractiveObject
             animator.SetBool(shouldOpenAnimParameter, false);
             isOpen = false;
 
-            displayText = "Close Door";
-
+            lockedDisplayText = "Open Door";
         }
         //If the door is locked, and the player doesn't have the key play the locked audio clip when interacting with it.
         else if (isLocked && !HasKey)
