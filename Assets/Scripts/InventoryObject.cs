@@ -6,9 +6,18 @@ public class InventoryObject : InteractiveObject
 {
     //TODO: Add long description field.
     //TODO: Add a field for an icon.
+
     [Tooltip("The name of the object as it appears in the player's inventory.")]
     [SerializeField]
     private string objectName = nameof(InventoryObject);
+
+    [Tooltip("This is the description of the inventory object.")]
+    [SerializeField]
+    private string itemDescription;
+
+    [Tooltip("Inventory object's icon.")]
+    [SerializeField]
+    private Sprite itemIcon;
 
     public string ObjectName => objectName;
 
