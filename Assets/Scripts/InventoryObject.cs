@@ -12,6 +12,7 @@ public class InventoryObject : InteractiveObject
     private string objectName = nameof(InventoryObject);
 
     [Tooltip("This is the description of the inventory object.")]
+    [TextArea(3, 8)]
     [SerializeField]
     private string itemDescription;
 
