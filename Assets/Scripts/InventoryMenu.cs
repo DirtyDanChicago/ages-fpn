@@ -9,6 +9,7 @@ using UnityEngine;
 public class InventoryMenu : MonoBehaviour
 {
     private static InventoryMenu instance;
+    private CanvasGroup canvasGroup;
 
     public static InventoryMenu Instance
     {
@@ -22,6 +23,20 @@ public class InventoryMenu : MonoBehaviour
 
         private set { instance = value; }
     }
+    
+    //Shows the player's inventory menu.
+    private void ShowMenu()
+    {
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = true;
+    }
+
+    //Hides the player's inventory menu.
+    private void HideMenu()
+    {
+        canvasGroup.alpha = 0;
+        canvasGroup.interactable = false;
+    }
 
     private void Awake()
     {
@@ -29,5 +44,7 @@ public class InventoryMenu : MonoBehaviour
             instance = this;
         else
            throw new System.Exception("There is already an instance of InventoryMenu, there can only be one.");
+
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 }
