@@ -1910,8 +1910,8 @@ GameObject:
   - component: {fileID: 293902441}
   - component: {fileID: 293902440}
   - component: {fileID: 293902439}
-  - component: {fileID: 293902443}
   - component: {fileID: 293902438}
+  - component: {fileID: 293902443}
   - component: {fileID: 293902442}
   m_Layer: 5
   m_Name: InventoryCanvas
@@ -1978,7 +1978,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &293902441
 RectTransform:
@@ -2488,7 +2488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12, y: 0.000061035156}
+  m_AnchoredPosition: {x: 12, y: 0.0004272461}
   m_SizeDelta: {x: -24, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &422004049
@@ -3590,7 +3590,6 @@ GameObject:
   - component: {fileID: 702230371}
   - component: {fileID: 702230370}
   - component: {fileID: 702230369}
-  - component: {fileID: 702230376}
   m_Layer: 0
   m_Name: Keycard
   m_TagString: Untagged
@@ -4024,18 +4023,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &702230376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702230368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2eb4f369468af4c9a990f6f94fa166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &733785081
 Mesh:
   m_ObjectHideFlags: 0
@@ -6253,17 +6240,9 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 05000000
-  m_SelectedEdges:
-  - a: 20
-    b: 21
-  - a: 22
-    b: 20
-  - a: 21
-    b: 23
-  - a: 23
-    b: 22
-  m_SelectedVertices: 14000000150000001600000017000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!23 &822586046
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6888,7 +6867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000009042123, y: 0.000069499016}
+  m_AnchoredPosition: {x: 0.0000009042123, y: 0.0006798506}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &986065924
@@ -9639,8 +9618,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205913117}
   m_HandleRect: {fileID: 1205913116}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.5671207
+  m_Value: 0.99999905
+  m_Size: 0.54228854
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10856,8 +10835,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 892560280}
   m_HandleRect: {fileID: 892560279}
   m_Direction: 2
-  m_Value: 0.99999917
-  m_Size: 0.8053691
+  m_Value: 0.99999577
+  m_Size: 0.80536914
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
