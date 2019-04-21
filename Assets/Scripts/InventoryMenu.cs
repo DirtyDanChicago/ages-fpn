@@ -33,7 +33,9 @@ public class InventoryMenu : MonoBehaviour
     {
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
-        
+        rigidbodyFirstPersonController.enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     //Hides the player's inventory menu.
@@ -41,14 +43,19 @@ public class InventoryMenu : MonoBehaviour
     {
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        rigidbodyFirstPersonController.enabled = true;
     }
 
+    //Update handles inventory input.
     private void Update()
     {
         HandleInput();
 
     }
 
+    //Player presses ShowInventoryMenu to show and hide menu.
     private void HandleInput()
     {
         if (Input.GetButtonDown("ShowInventoryMenu"))
@@ -58,6 +65,7 @@ public class InventoryMenu : MonoBehaviour
                 ShowMenu();
     }
 
+    //Looks for instances of the InventoryMenu script, throws exception of there is more than one. It also gets the components needed.
     private void Awake()
     {
         if (instance == null)
@@ -66,6 +74,11 @@ public class InventoryMenu : MonoBehaviour
            throw new System.Exception("There is already an instance of InventoryMenu, there can only be one.");
 
         canvasGroup = GetComponent<CanvasGroup>();
+        rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
+    }
+
+    private void Start()
+    {
         HideMenu();
     }
 }
