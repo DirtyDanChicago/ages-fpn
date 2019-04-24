@@ -9,6 +9,7 @@ public class InventoryMenuItemToggle : MonoBehaviour
     [SerializeField]
     private Image iconImage;
 
+    [SerializeField]
     private InventoryObject associatedInventoryObject;
 
     private void Start()
