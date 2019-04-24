@@ -28,6 +28,12 @@ public class InventoryMenu : MonoBehaviour
     
     private bool IsVisable => canvasGroup.alpha > 0;
 
+    //Function for the exit button on the inventory menu UI.
+    public void ExitButtonClicked()
+    {
+        HideMenu();
+    }
+
     //Shows the player's inventory menu.
     private void ShowMenu()
     {
