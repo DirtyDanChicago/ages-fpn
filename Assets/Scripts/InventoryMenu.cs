@@ -12,6 +12,7 @@ public class InventoryMenu : MonoBehaviour
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
+    private AudioSource inventoryOpen;
 
     public static InventoryMenu Instance
     {
@@ -32,6 +33,7 @@ public class InventoryMenu : MonoBehaviour
     public void ExitButtonClicked()
     {
         HideMenu();
+        inventoryOpen.Play();
     }
 
     //Shows the player's inventory menu.
@@ -66,9 +68,16 @@ public class InventoryMenu : MonoBehaviour
     {
         if (Input.GetButtonDown("ShowInventoryMenu"))
             if (IsVisable)
+            {
                 HideMenu();
+                inventoryOpen.Play();
+            }
             else
+            {
                 ShowMenu();
+                inventoryOpen.Play();
+            }
+                
     }
 
     //Looks for instances of the InventoryMenu script, throws exception of there is more than one. It also gets the components needed.
@@ -81,6 +90,7 @@ public class InventoryMenu : MonoBehaviour
 
         canvasGroup = GetComponent<CanvasGroup>();
         rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
+        inventoryOpen = GetComponent<AudioSource>();
     }
 
     private void Start()
