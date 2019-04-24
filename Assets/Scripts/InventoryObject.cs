@@ -20,6 +20,8 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private Sprite itemIcon;
 
+    public Sprite Icon => itemIcon;
+    public string Description => itemDescription;
     public string ObjectName => objectName;
 
     //Variables to help find the collider, and renderer of the Inventory Objects.
