@@ -17,11 +17,18 @@ public class InventoryMenu : MonoBehaviour
     [SerializeField]
     private Transform inventoryListContentArea;
 
+    [Tooltip("Place in the UI for displaying the name of the selected inventory item.")]
+    [SerializeField]
+    private Text itemLabelText;
+
+    [Tooltip("Place in the UI for displaying the description of the selected inventory item.")]
+    [SerializeField]
+    private Text itemDescriptionText;
+
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
     private AudioSource inventoryOpen;
-    private ToggleGroup toggleGroup;
 
     public static InventoryMenu Instance
     {
@@ -76,6 +83,21 @@ public class InventoryMenu : MonoBehaviour
         rigidbodyFirstPersonController.enabled = true;
     }
 
+    private void OnInventoryMenuItemSelected(InventoryObject inventoryObjectThatWasSelected)
+    {
+        itemLabelText.text = inventoryObjectThatWasSelected.ObjectName;
+        itemDescriptionText.text = inventoryObjectThatWasSelected.Description;
+    }
+
+    private void OnEnable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected += OnInventoryMenuItemSelected;
+    }
+    private void OnDisable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected -= OnInventoryMenuItemSelected;
+    }
+
     //Update handles inventory input.
     private void Update()
     {
@@ -111,7 +133,6 @@ public class InventoryMenu : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
         rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
         inventoryOpen = GetComponent<AudioSource>();
-        toggleGroup = GetComponentInChildren<ToggleGroup>();
     }
 
     private void Start()
