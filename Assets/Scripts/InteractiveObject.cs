@@ -11,11 +11,11 @@ using UnityEngine;
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
-    [Tooltip("The name displayed when the player looks at this interactive object.")]
+    [Tooltip("The text displayed when the player looks at this interactive object.")]
     protected string displayText = nameof(InteractiveObject);
 
-    public string DisplayText => displayText;
-    private AudioSource audioSource;
+    public virtual string DisplayText => displayText;
+    protected private AudioSource audioSource;
 
     //On awake, find the audio source component of the object.
     protected virtual void Awake()
