@@ -1425,7 +1425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &149873473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2025,6 +2025,8 @@ MonoBehaviour:
   inventoryMenuItemTogglePrefab: {fileID: 4778098472099546943, guid: 81d5ce646dbd21d44bab783c64296559,
     type: 3}
   inventoryListContentArea: {fileID: 986065923}
+  itemLabelText: {fileID: 149873472}
+  itemDescriptionText: {fileID: 422004049}
 --- !u!225 &293902443
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2146,7 +2148,7 @@ GameObject:
   - component: {fileID: 422004049}
   - component: {fileID: 422004051}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Item Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2168,7 +2170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12, y: 0.0004272461}
+  m_AnchoredPosition: {x: 12, y: 0.000061033028}
   m_SizeDelta: {x: -24, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &422004049
@@ -2193,25 +2195,19 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 067cdf1a1af74484d90880458f2fc42c, type: 3}
-    m_FontSize: 25
+    m_FontSize: 2
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 300
+    m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Lorem ipsum dolor sit amet, tritani definiebas cu cum, erat dolorem consequuntur
-    sed te. Dicta conceptam constituto ex vim, te pro nibh laudem molestie. Vix civibus
-    ponderum ei, his movet intellegam an, eu sit ridens impedit tacimates. Ut quo
-    quidam necessitatibus, mei sale antiopam ut.\r\n\r\nGraece suscipiantur qui cu,
-    cu eam laudem tibique. Explicari intellegebat nec et, id meliore deterruisset
-    quo. Cetero veritus his te, ne nisl insolens periculis cum. Sed ea alterum vocibus
-    corpora. Mentitum urbanitas voluptatibus eam an. Legere graece comprehensam mea
-    an, falli erant aliquam vis no."
+    m_LineSpacing: 1.05
+  m_Text: This is your inventory. Items you find throughout the world will display
+    here. Click on them to get a description.
 --- !u!222 &422004050
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5936,7 +5932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000009042123, y: 0.000038981438}
+  m_AnchoredPosition: {x: 0.0000009042123, y: 0.000100016594}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &986065924
@@ -8708,8 +8704,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205913117}
   m_HandleRect: {fileID: 1205913116}
   m_Direction: 2
-  m_Value: 0.999999
-  m_Size: 0.5671207
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9777,7 +9773,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 892560279}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
