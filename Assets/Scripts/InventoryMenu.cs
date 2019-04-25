@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 /// <summary>
 /// This script provides the connection to the player's inventory menu and the player's inventory list.
@@ -12,10 +13,15 @@ public class InventoryMenu : MonoBehaviour
     [SerializeField]
     private GameObject inventoryMenuItemTogglePrefab;
 
+    [Tooltip("Content of inventory item scroll view.")]
+    [SerializeField]
+    private Transform inventoryListContentArea;
+
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
     private RigidbodyFirstPersonController rigidbodyFirstPersonController;
     private AudioSource inventoryOpen;
+    private ToggleGroup toggleGroup;
 
     public static InventoryMenu Instance
     {
@@ -39,9 +45,15 @@ public class InventoryMenu : MonoBehaviour
         inventoryOpen.Play();
     }
 
+    /// <summary>
+    /// Instantiates inventoryMenuItemToggle prefab and adds it to menu.
+    /// </summary>
+    /// <param name="inventoryObjectToAdd"></param>
     public void AddItemToMenu(InventoryObject inventoryObjectToAdd)
     {
-        Instantiate(inventoryMenuItemTogglePrefab);
+        GameObject clone = Instantiate(inventoryMenuItemTogglePrefab, inventoryListContentArea);
+        InventoryMenuItemToggle toggle = clone.GetComponent<InventoryMenuItemToggle>();
+        toggle.AssociatedInventoryObject = inventoryObjectToAdd;
     }
 
     //Shows the player's inventory menu.
@@ -99,6 +111,7 @@ public class InventoryMenu : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
         rigidbodyFirstPersonController = FindObjectOfType<RigidbodyFirstPersonController>();
         inventoryOpen = GetComponent<AudioSource>();
+        toggleGroup = GetComponentInChildren<ToggleGroup>();
     }
 
     private void Start()
