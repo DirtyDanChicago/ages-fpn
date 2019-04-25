@@ -39,6 +39,11 @@ public class InventoryMenu : MonoBehaviour
         inventoryOpen.Play();
     }
 
+    public void AddItemToMenu(InventoryObject inventoryObjectToAdd)
+    {
+        Instantiate(inventoryMenuItemTogglePrefab);
+    }
+
     //Shows the player's inventory menu.
     private void ShowMenu()
     {

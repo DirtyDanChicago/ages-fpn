@@ -12,6 +12,16 @@ public class InventoryMenuItemToggle : MonoBehaviour
     [SerializeField]
     private InventoryObject associatedInventoryObject;
 
+    public InventoryObject AssociatedInventoryObject
+    {
+        get { return associatedInventoryObject; }
+        set
+        {
+            associatedInventoryObject = value;
+            iconImage.sprite = associatedInventoryObject.Icon;
+        }
+    }
+
     private void Start()
     {
         iconImage.sprite = associatedInventoryObject.Icon;
