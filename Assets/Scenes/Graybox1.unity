@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.70081586, g: 0.5601325, b: 0.38116673, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1933,7 +1933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!43 &155019825
 Mesh:
@@ -5035,7 +5035,7 @@ PrefabInstance:
     - target: {fileID: 6425610887184770170, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00012207031
+      value: -0.000091552734
       objectReference: {fileID: 0}
     - target: {fileID: 6425610887065938926, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
@@ -5150,7 +5150,7 @@ PrefabInstance:
     - target: {fileID: 6425610886595382569, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.000021
+      value: 4.999994
       objectReference: {fileID: 0}
     - target: {fileID: 6425610886595382569, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
@@ -5355,12 +5355,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479401334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126, y: 0, z: -133}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 200, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 2087726644}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482791609
 GameObject:
@@ -13016,7 +13016,7 @@ Transform:
   - {fileID: 2007976203}
   - {fileID: 1534679880}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1167358528
 Mesh:
@@ -23175,7 +23175,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -74, y: 0, z: -133}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 479401337}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
