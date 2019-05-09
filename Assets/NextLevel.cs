@@ -14,7 +14,7 @@ public class NextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Greybox2");
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 
