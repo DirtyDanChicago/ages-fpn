@@ -10,9 +10,17 @@ public class TitleMenuScript : MonoBehaviour
     [SerializeField]
     private string sceneToLoad;
 
+    [SerializeField]
+    private string siteToLoad;
+
     public void SceneLoader()
     {
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void SiteLoader()
+    {
+        Application.OpenURL(siteToLoad);
     }
 
     public void EndGame()
