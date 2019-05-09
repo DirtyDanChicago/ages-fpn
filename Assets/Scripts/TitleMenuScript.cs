@@ -2,7 +2,8 @@
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// This script loads different scenes inputed through the editor.
+/// This script loads different scenes inputed through the editor. It is also used to play
+/// the game through events within animations.
 /// </summary>
 public class TitleMenuScript : MonoBehaviour
 {
