@@ -521,7 +521,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215712
+  m_Name: pb_Mesh-249102
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -681,7 +681,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215718
+  m_Name: pb_Mesh-249108
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1181,7 +1181,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215704
+  m_Name: pb_Mesh-249094
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1364,7 +1364,7 @@ MonoBehaviour:
     where you got access to the facility, one will be at the start of your day, and
     a third in a place that's red. Sorry about the cryptic message, if Teagan reads
     this he'll try to take the crystals.
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 2f1290cb019a433429939ddfa5a5b06c, type: 3}
 --- !u!82 &77561731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2737,7 +2737,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215724
+  m_Name: pb_Mesh-249114
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6908,7 +6908,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215716
+  m_Name: pb_Mesh-249106
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7137,7 +7137,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh130380
+  m_Name: pb_Mesh159260
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10058,7 +10058,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215722
+  m_Name: pb_Mesh-249112
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -17192,7 +17192,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215770
+  m_Name: pb_Mesh-249160
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18606,7 +18606,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215730
+  m_Name: pb_Mesh-249120
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -20772,7 +20772,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215614
+  m_Name: pb_Mesh-249004
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21092,7 +21092,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215708
+  m_Name: pb_Mesh-249098
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -22168,7 +22168,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215714
+  m_Name: pb_Mesh-249104
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -22717,7 +22717,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215792
+  m_Name: pb_Mesh-249182
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -23213,7 +23213,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215600
+  m_Name: pb_Mesh-248990
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -23896,7 +23896,7 @@ PrefabInstance:
     - target: {fileID: 6425610887184770170, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 6425610887065938926, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
@@ -24011,7 +24011,7 @@ PrefabInstance:
     - target: {fileID: 6425610886595382569, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.9999905
+      value: 4.9999924
       objectReference: {fileID: 0}
     - target: {fileID: 6425610886595382569, guid: 8d5f998d7664d3a44ae68c5ae930c1c0,
         type: 3}
@@ -24382,7 +24382,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-215574
+  m_Name: pb_Mesh-248964
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
